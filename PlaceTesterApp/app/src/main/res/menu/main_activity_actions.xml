@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_add_new"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/action_add"
+        android:tooltipText="@string/toolTip_addNew"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_routes"
+        android:icon="@drawable/ic_action_calculations"
+        android:title="@string/action_calcs"
+        android:tooltipText="@string/toolTip_calcRt"
+        app:showAsAction="ifRoom" />
+
+</menu>

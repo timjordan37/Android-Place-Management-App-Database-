@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Place Tester App</string>
+    <string name="loc_det_tit">Location Details</string>
+    <string name="loc_det_name">Name</string>
+    <string name="loc_det_desc">Description</string>
+    <string name="loc_det_cat">Category</string>
+    <string name="loc_det_addT">Address Title</string>
+    <string name="loc_det_addS">Address Street</string>
+    <string name="loc_det_elev">Elevation</string>
+    <string name="loc_det_lat">Latitude</string>
+    <string name="loc_det_long">Longitude</string>
+    <string name="add_new_title">Add Location</string>
+    <string name="edit_title">Edit Location</string>
+    <string name="delete_text">Delete this location?</string>
+    <string name="delete_button">Delete</string>
+
+    <string name="action_add">Add New</string>
+    <string name="action_search">Search</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_calcs">Calculations</string>
+
+    <string name="calc_place1Label">Place 1</string>
+    <string name="calc_place2Label">Place 2</string>
+    <string name="calc_GcLabel">Great Circle Distance (km)</string>
+    <string name="calc_InitBearLabel">Initial Bearing (deg)</string>
+    <string name="calc_det_title">Route Calculations</string>
+    <string name="button_calculations">Calculations</string>
+    <string name="button_submit">Submit</string>
+
+    <string name="toolTip_addNew">Add a new location</string>
+    <string name="toolTip_calcRt">Gt. Circle/Init. Bearing</string>
+
+</resources>

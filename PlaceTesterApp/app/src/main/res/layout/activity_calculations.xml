@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp" >
+
+    <TextView
+        android:id="@+id/calc_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="@string/calc_det_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/place1_view"
+        android:layout_below="@id/calc_detail_title"
+        android:paddingBottom="16dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_place1"
+            android:text="@string/calc_place1Label"
+            android:paddingBottom="16dp"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn_place1"
+            android:layout_toRightOf="@id/lbl_place1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/place2_view"
+        android:layout_below="@id/place1_view"
+        android:paddingBottom="36dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_place2"
+            android:text="@string/calc_place2Label"
+            android:paddingBottom="16dp" />
+
+        <Spinner
+            android:id="@+id/spn_place2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_place1"
+            android:layout_toEndOf="@+id/lbl_place2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calcBtn_view"
+        android:layout_below="@id/place2_view"
+        android:paddingBottom="36dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_doCalc"
+            android:text="@string/button_calculations"
+            android:gravity="center_horizontal"
+            android:onClick="doCalculations"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/greatCircle_view"
+        android:layout_below="@id/calcBtn_view"
+        android:paddingBottom="16dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_greatCircle"
+            android:text="@string/calc_GcLabel"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/result_GreatCircle"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/initialBearing_view"
+        android:layout_below="@id/greatCircle_view"
+        android:paddingBottom="16dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_initBearing"
+            android:text="@string/calc_InitBearLabel"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/result_initBearing"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

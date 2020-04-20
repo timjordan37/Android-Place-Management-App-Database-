@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    tools:context="edu.asu.bsse.tsjorda1.plactester.LocationDetailActivity">
+
+    <TextView
+        android:id="@+id/location_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="@string/add_new_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_view"
+        android:layout_below="@id/location_detail_title"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/nameLabel"
+            android:text="@string/loc_det_name"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:id="@+id/nameET"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0.15"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description_view"
+        android:layout_below="@id/name_view"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/descLabel"
+            android:text="@string/loc_det_desc"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:id="@+id/descET"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0.15"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_view"
+        android:layout_below="@id/description_view"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/catLabel"
+            android:text="@string/loc_det_cat"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:id="@+id/catET"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0.15"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressT_view"
+        android:layout_below="@id/category_view"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/addTLabel"
+            android:text="@string/loc_det_addT"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:id="@+id/addTET"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0.15"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressS_view"
+        android:layout_below="@id/addressT_view"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/addSLabel"
+            android:text="@string/loc_det_addS"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:id="@+id/addSET"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0.15"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/elevation_view"
+        android:layout_below="@id/addressS_view"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/elevLabel"
+            android:text="@string/loc_det_elev"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:id="@+id/elevET"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0.15"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/latitude_view"
+        android:layout_below="@id/elevation_view"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/latLabel"
+            android:text="@string/loc_det_lat"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:id="@+id/latET"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_weight="0.15"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/longitude_view"
+        android:layout_below="@id/latitude_view"
+        android:paddingBottom="15dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/longLabel"
+            android:text="@string/loc_det_long"
+            android:gravity="left"
+            android:layout_weight="0.10"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/longET"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.15"
+            android:gravity="right"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/btn_addNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="@string/button_submit"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:onClick="addNewLocation" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
